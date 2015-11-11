@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HW3</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+	<script src="myCtrl.js"></script>
+</head>
+<body>
+	<div class="container" ng-app="myApp" ng-controller="myCtrl">
+		<div class="calculator">
+			<div class="screen" ng-model="ret">{{ret}}</div>
+			<div class="nums" ng-model="nums">
+				<button class="btn" ng-repeat="x in nums" ng-click="getNum(x)">{{x}}</button>
+			</div>
+			<div class="operator" ng-model="operator">
+				<button class="btn" ng-repeat="x in operator" ng-click="getOperator(x)">{{x}}</button>
+				<button class="btn plusbutton" ng-click="getOperator('plus')">{{plus}}</button>
+				<button class="btn" ng-click="getOperator('division')">{{division}}</button>
+				<button class="btn" ng-click="getOperator('equal')">{{equal}}</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
