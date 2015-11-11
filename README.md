@@ -22,4 +22,4 @@
 
 	1. Implement the operation of multiple operands
 	
-	2. Add more operator to do more complicated arithmatic
+	2. Add more operators to do more complicated arithmatic
