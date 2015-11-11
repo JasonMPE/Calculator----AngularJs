@@ -1,0 +1,53 @@
+.container{
+	margin-top:80px;
+}
+
+.container .screen{
+	height:80px;
+	width:396px;
+	text-align:right;
+	line-height: 80px;
+	font-size:38px;
+	padding:0 15px;
+	background-color: #009933;
+	margin:60px auto;
+	overflow: hidden;
+}
+
+.container .btn{
+	float:left;
+	height:70px;
+	width:70px;
+	margin:2px;
+	font-size:20px;
+}
+
+.container .btn:hover {
+	background-color:#e6b700;
+}
+
+.container .calculator{
+	width:436px;
+	height:556px;
+	border: 6px solid #99CCFF;
+	margin:0 auto;
+}
+
+.container .nums{
+	width:222px;
+	height:296px;
+	float:left;
+	margin-bottom:60px;
+	margin-left:20px;
+}
+
+.container .operator{
+	width:148px;
+	height:296px;
+	float:right;
+	margin-right:20px;
+}
+
+.container .plusbutton{
+	height:144px;
+}
